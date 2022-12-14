@@ -1,7 +1,7 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Link from "next/link";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -13,7 +13,8 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to LIFF App developed by <a href="https://nextjs.org">Next.js!</a>
+          Welcome to LIFF App developed by{" "}
+          <a href="https://nextjs.org">Next.js!</a>
         </h1>
         <Image
           src="/images/LINE_logo.webp"
@@ -23,9 +24,7 @@ export default function Home() {
         />
 
         <p className={styles.description}>
-         <Link href="/profile">
-          <a>Click To See My Profile</a>
-        </Link>
+          <Link href="/profile">Click To See My Profile</Link>
         </p>
 
         <div className={styles.grid}>
@@ -65,10 +64,10 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>
     </div>
-  )
+  );
 }
